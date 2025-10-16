@@ -10,15 +10,15 @@ setup(
     version="0.0",
     author="Yiheng Xu",
     url="https://github.com/microsoft/unilm/tree/master/layoutlm",
-    description="LayoutLM",
+    description="LayoutLM,25年更新一些库",
     packages=find_packages(exclude=("configs", "tests")),
     python_requires=">=3.6",
     install_requires=[
-        "transformers==2.9.0",
+        "transformers>=4.41,<5",
         "tensorboardX==2.0",
-        "lxml==4.5.1",
-        "seqeval==0.0.12",
-        "Pillow==7.1.2",
+        "lxml==4.9.3",
+        "seqeval>=1.2.2",
+        "Pillow>=9.5",
     ],
     extras_require={
         "dev": ["flake8==3.8.2", "isort==4.3.21", "black==19.10b0", "pre-commit==2.4.0"]
